@@ -1,7 +1,13 @@
 <body>
   <div class="search">
     <h4>Search </h4>
-    <input type="text" placeholder="search GIF" >
+    <input type="text" placeholder="search GIF" #gif (keyup.enter) = "search(gif.value)" >
 
+  </div>
+
+  <div class="gifs">
+    <div class="gif" *ngFor='let giff of giffs'>
+      <img [src]="giff.images.downsized.url" alt="images">
+    </div>
   </div>
 </body>

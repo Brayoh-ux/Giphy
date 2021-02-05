@@ -19,3 +19,15 @@ h4{
   padding: 8px 16px;
   margin-top: 20px;
 }
+.gifs{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  margin: 10px;
+  background: linear-gradient(140deg, #000000, blue);
+}
+img{
+  height: 40vh;
+  max-width: 90%;
+  margin-right: 2px;
+}

@@ -9,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class SearchComponent implements OnInit {
 
   constructor(private dataService: DataService) { }
+  giffs : any [] = [] ;
 
   ngOnInit(): void {
+  }
+
+  search(searchTerm: string){
+    if(searchTerm !== ''){
+      this.dataService.searchGifs(searchTerm).subscribe((response: any) =>{
+        console.log("Search ", response);
+        this.giffs = response.data;
+      });
+    }
   }
 
 }
