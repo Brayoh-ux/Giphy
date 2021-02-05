@@ -14,4 +14,7 @@ export class DataService {
     return this.http.get(`https://api.giphy.com/v1/gifs/trending?api_key=${environment.gifApiKey}&limit=30`);
   }
 
+  searchGifs(gifName: string){
+    return this.http.get(`https://api.giphy.com/v1/gifs/search?q=${gifName}&api_key=${environment.gifApiKey}&limit=30`);
+  }
 }
