@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
 .gifs{
   display: grid;
   grid-template-columns: auto auto auto;
   width: 100%;
   margin: 10px;
-  background: linear-gradient(140deg, #000000, blue);
+  background: linear-gradient(130deg, #000000, blue);
 }
 img{
   height: 40vh;
   max-width: 90%;
   margin-right: 2px;
+}
+h3{
+  color: rgb(135, 233, 225);
+  font-size: 40px;
+  background-color: #00032c;
+  text-align: center;
+  padding-top: 15px;
+  margin-top: -10px;
+  padding-bottom: 10px;
+  font-family: 'Courgette', cursive;
 }

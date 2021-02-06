@@ -31,3 +31,11 @@ img{
   max-width: 90%;
   margin-right: 2px;
 }
+input{
+  border: aliceblue 2px;
+  border-radius: 12px;
+  background-color: rgba(240, 248, 255, 0.322);
+}
+::placeholder{
+  color: #000000;
+}
